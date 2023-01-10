@@ -4,22 +4,40 @@ import { Link } from "react-router-dom";
 
 import "../styles/Nav.scss";
 
+const menu: any = [
+    {
+        name: "Home",
+        link: "/",
+    },
+    {
+        name: "About Me",
+        link: "/about",
+    },
+    {
+        name: "Skills",
+        link: "/skills",
+    },
+    {
+        name: "Portfolio",
+        link: "/portfolio",
+    },
+    {
+        name: "Contact Me",
+        link: "/contact",
+    },
+];
+
 const Nav: FC = (): JSX.Element => {
     return (
         <nav>
             <ul>
-                <li>
-                    <Link to={"/"}>Home</Link>
-                </li>
-                <li>
-                    <Link to={"/about"}>About Me</Link>
-                </li>
-                <li>
-                    <Link to={"/skills"}>Skills</Link>
-                </li>
-                <li>
-                    <Link to={"/contact"}>Contact Me</Link>
-                </li>
+                {menu.map((item: any) => {
+                    return (
+                        <li>
+                            <Link to={item.link}>{item.name}</Link>
+                        </li>
+                    );
+                })}
             </ul>
         </nav>
     );

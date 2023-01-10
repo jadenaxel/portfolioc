@@ -34,4 +34,6 @@ $bg-secondary: #fbfbfb;
     grid-area: main;
     background-color: $bg-secondary;
     padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
 }
