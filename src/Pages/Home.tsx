@@ -11,7 +11,16 @@ const Home: FC = (): JSX.Element => {
                 <Nav />
             </div>
             <div className="main">
-                <h1>Home</h1>
+                <div className="home">
+                    <div className="home-presentation">
+                        <h1 className="">
+                            Yonderi
+                            <span>Diaz</span>
+                            <span>Rivera</span>
+                        </h1>
+                        <img src="/assets/profile.jpg" />
+                    </div>
+                </div>
             </div>
         </div>
     );

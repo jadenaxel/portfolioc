@@ -31,9 +31,9 @@ const Nav: FC = (): JSX.Element => {
     return (
         <nav>
             <ul>
-                {menu.map((item: any) => {
+                {menu.map((item: any, i: number) => {
                     return (
-                        <li>
+                        <li key={i}>
                             <Link to={item.link}>{item.name}</Link>
                         </li>
                     );

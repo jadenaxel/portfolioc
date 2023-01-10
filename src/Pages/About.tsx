@@ -12,7 +12,7 @@ const About: FC = (): JSX.Element => {
             </div>
             <div className="main">
                 <div className="about">
-                    <h1 className="about-title">About</h1>
+                    <h1 className="about-title">About me</h1>
                     <div className="about-desc">
                         <p>
                             Hi, my name is Yonderi Diaz. I am a Full-Stack

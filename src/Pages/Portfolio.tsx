@@ -2,18 +2,18 @@ import type { FC } from "react";
 
 import { Nav } from "../components";
 
-import "../styles/Skills.scss";
+import "../styles/Portfolio.scss";
 
-const Skills: FC = (): JSX.Element => {
+const Portfolio: FC = (): JSX.Element => {
     return (
         <div className="page">
             <div className="navigation">
                 <Nav />
             </div>
             <div className="main">
-                <h1>Skills</h1>
+                <h1>Portfolio</h1>
             </div>
         </div>
     );
 };
-export default Skills;
+export default Portfolio;

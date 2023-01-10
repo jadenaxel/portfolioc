@@ -2,7 +2,7 @@ import type { FC } from "react";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Home, About, Skills, Contact } from "./Pages";
+import { Home, About, Skills, Portfolio, Contact } from "./Pages";
 
 const App: FC = (): JSX.Element => {
     return (
@@ -11,6 +11,7 @@ const App: FC = (): JSX.Element => {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/skills" element={<Skills />} />
+                <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </BrowserRouter>
