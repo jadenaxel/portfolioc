@@ -11,7 +11,45 @@ const Skills: FC = (): JSX.Element => {
                 <Nav />
             </div>
             <div className="main">
-                <h1>Skills</h1>
+                <div className="skills">
+                    <h1>Skills</h1>
+
+                    <div>
+                        <h2>Frontend</h2>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>PUG</li>
+                            <li>CSS3</li>
+                            <li>SASS</li>
+                            <li>JavaScript</li>
+                            <li>NextJS</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Backend</h2>
+                        <ul>
+                            <li>NodeJS</li>
+                            <li>TypeScript</li>
+                            <li>Express</li>
+                            <li>NestJS</li>
+                            <li>GRAPHQL</li>
+                            <li>API Rest</li>
+                            <li>Docker</li>
+                            <li>SQL Server</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Mobile</h2>
+                        <ul>
+                            <li>React Native</li>
+                            <li>Expo</li>
+                        </ul>
+                    </div>
+                    <ul></ul>
+                </div>
             </div>
         </div>
     );
