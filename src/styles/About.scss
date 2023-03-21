@@ -2,6 +2,11 @@
 
 .about{
     padding-left: 20px;
+    
+    @include break(660px){
+        margin-left: 20px;
+    }
+
     &-title{
         font-size: clamp(100%, 65px, 70px);
         margin-bottom: 50px;

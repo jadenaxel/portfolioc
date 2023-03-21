@@ -1,19 +1,19 @@
 @import "main.scss";
 
-.home{
-    &-presentation{
+.home {
+    &-presentation {
         min-height: 90vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         place-items: center;
         gap: 20px;
-        h1{
+        h1 {
             justify-self: end;
             font-size: clamp(100%, 50px, 60px);
-            span{
+            span {
                 display: block;
                 line-height: 25px;
-                &:first-child{
+                &:first-child {
                     position: relative;
                     top: -5px;
                     margin-left: 35px;
@@ -21,10 +21,9 @@
                 }
             }
         }
-        img{
+        img {
             justify-self: start;
-            max-width: 200px;
-            width: 100%;
+            width: 200px;
             height: 200px;
             object-fit: cover;
             border-radius: 50%;

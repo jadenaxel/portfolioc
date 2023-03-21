@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,200&display=swap");
 
-@mixin break($px){
-    @media (max-width: $px){
+@mixin break($px) {
+    @media (max-width: $px) {
         @content;
     }
 }
@@ -9,30 +9,76 @@ $color-primary: #23aaf2;
 $bg-primary: #fefefe;
 $bg-secondary: rgba(243, 243, 243, 0.647);
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
 }
 
-.page{
+.page {
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-areas: "navigation main";
     min-height: 100vh;
+
+    background-color: $bg-secondary;
+
+    position: relative;
+
+    @include break(660px) {
+        grid-template-columns: auto 1fr;
+        grid-template-areas: "burger main";
+    }
 }
-.navigation{
+.navigation {
     grid-area: navigation;
     display: grid;
     place-items: center;
 
     background-color: $bg-primary;
+
     padding: 20px;
+
+    @include break(660px) {
+        max-width: 250px;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        z-index: 2;
+        transition: all 0.5s ease-in-out;
+    }
 }
-.main{
+.burgerMenu {
+    grid-area: burger;
+    display: none;
+    
+    margin-top: 20px;
+    
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    
+    position: absolute;
+    
+    @include break(660px) {
+        display: block;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+    }
+}
+.main {
     grid-area: main;
-    background-color: $bg-secondary;
+
+    @include break(660px) {
+        place-items: center;
+    }
+
     padding: 20px;
     height: 100vh;
     overflow-y: auto;
