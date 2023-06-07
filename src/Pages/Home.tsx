@@ -6,6 +6,12 @@ import { Nav } from "../components";
 
 import "../styles/Home.scss";
 
+const MenuImg = new URL("../../assets/menu.png", import.meta.url).href;
+const ProfileImg = new URL("../../assets/profile.jpg", import.meta.url).href;
+
+// import MenuImg from "../../assets/menu.png";
+// import ProfileImg from "../../assets/profile.jpg";
+
 const Home: FC = (): JSX.Element => {
     const [menu, setMenu] = useState<boolean>(false);
 
@@ -20,7 +26,7 @@ const Home: FC = (): JSX.Element => {
                 <Nav />
             </div>
             <div className="burgerMenu" onClick={setStyles} style={burgerMenu}>
-                <img src="/assets/menu.png" />
+                <img src={MenuImg} />
             </div>
             <div className="main">
                 <div className="home">
@@ -30,7 +36,7 @@ const Home: FC = (): JSX.Element => {
                             <span>Diaz</span>
                             <span>Rivera</span>
                         </h1>
-                        <img src="/assets/profile.jpg" />
+                        <img src={ProfileImg} />
                     </div>
                 </div>
             </div>
