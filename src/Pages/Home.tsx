@@ -9,9 +9,6 @@ import "../styles/Home.scss";
 const MenuImg = new URL("../../assets/menu.png", import.meta.url).href;
 const ProfileImg = new URL("../../assets/profile.jpg", import.meta.url).href;
 
-// import MenuImg from "../../assets/menu.png";
-// import ProfileImg from "../../assets/profile.jpg";
-
 const Home: FC = (): JSX.Element => {
     const [menu, setMenu] = useState<boolean>(false);
 
