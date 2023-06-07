@@ -1,5 +1,27 @@
 @import "main.scss";
 
-.skills{
+.skills {
     margin-left: 60px;
+    h1 {
+        font-size: clamp(100%, 65px, 70px);
+        margin-bottom: 50px;
+    }
+
+    &-frontend,
+    &-backend,
+    &-mobile {
+        margin-bottom: 20px;
+        h2 {
+            font-size: clamp(100%, 35px, 40px);
+            margin-bottom: 20px;
+        }
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 30px;
+            li {
+                font-size: clamp(100%, 18px, 20px);
+            }
+        }
+    }
 }

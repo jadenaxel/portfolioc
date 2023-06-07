@@ -26,12 +26,22 @@ const Contact: FC = (): JSX.Element => {
                 <div className="contact">
                     <h1>Contact</h1>
                     <div className="contact_content">
-                        <p>Tel: 829-450-5297</p>
-                        <p>Email: jondydiaz@hotmail.com</p>
                         <p>
-                            GitHub:{" "}
+                            <span>Tel:</span> 829-450-5297
+                        </p>
+                        <p>
+                            <span>Email:</span> jondydiaz@hotmail.com
+                        </p>
+                        <p>
+                            <span>GitHub:</span>
                             <a href="//github.com/jadenaxel">
                                 github.com/jadenaxel
+                            </a>
+                        </p>
+                        <p>
+                            <span>LinkedIn:</span>
+                            <a href="//www.linkedin.com/in/jadenaxel/">
+                                jadenaxel
                             </a>
                         </p>
                     </div>

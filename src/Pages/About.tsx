@@ -12,7 +12,7 @@ const About: FC = (): JSX.Element => {
     const setStyles = () => setMenu(!menu);
 
     const menuContent = menu ? { left: 0 } : { left: "-250px" };
-    const burgerMenu = menu ? { marginLeft: 270 } : { marginLeft: 10 }; 
+    const burgerMenu = menu ? { marginLeft: 270 } : { marginLeft: 10 };
 
     return (
         <div className="page">
@@ -28,25 +28,23 @@ const About: FC = (): JSX.Element => {
                     <div className="about-desc">
                         <p>
                             Hi, my name is Yonderi Diaz. I am a Full-Stack
-                            developer with 2 years of experience in the field.
+                            Developer with 4 years of experience in the field.
                         </p>
                         <p>
                             During my career, I have acquired a wide range of
                             skills in backend and frontend technologies such as
-                            Node.js, JavaScript, Express, React, React Native,
-                            Next.js, and Docker.
+                            Node.js, JavaScript, etc...
                         </p>
                         <p>
                             I also have experience working with a variety of
-                            database engines such as SQL Server, MySQL, and
-                            MongoDB. I have worked on both individual and team
+                            database engines such as SQL Server, MySQL, MongoDB and PostgreSQL. I have worked on both individual and team
                             projects and have had the opportunity to develop
                             applications for external clients or companies on a
                             freelance basis.
                         </p>
                         <p>
                             I consider myself a highly skilled professional and
-                            am always looking for new challenges and
+                            I'm always looking for new challenges and
                             opportunities to continue learning and improving my
                             skills.
                         </p>

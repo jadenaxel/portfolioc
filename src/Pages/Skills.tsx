@@ -26,7 +26,7 @@ const Skills: FC = (): JSX.Element => {
                 <div className="skills">
                     <h1>Skills</h1>
 
-                    <div>
+                    <div className="skills-frontend">
                         <h2>Frontend</h2>
                         <ul>
                             <li>HTML5</li>
@@ -38,7 +38,7 @@ const Skills: FC = (): JSX.Element => {
                             <li>React</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="skills-backend">
                         <h2>Backend</h2>
                         <ul>
                             <li>NodeJS</li>
@@ -54,7 +54,7 @@ const Skills: FC = (): JSX.Element => {
                             <li>MongoDB</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="skills-mobile">
                         <h2>Mobile</h2>
                         <ul>
                             <li>React Native</li>
