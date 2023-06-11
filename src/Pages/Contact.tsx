@@ -6,6 +6,8 @@ import { Nav } from "../components";
 
 import "../styles/Contact.scss";
 
+const MenuImg = new URL("../../assets/menu.png", import.meta.url).href;
+
 const Contact: FC = (): JSX.Element => {
     const [menu, setMenu] = useState<boolean>(false);
 
@@ -20,7 +22,7 @@ const Contact: FC = (): JSX.Element => {
                 <Nav />
             </div>
             <div className="burgerMenu" onClick={setStyles} style={burgerMenu}>
-                <img src="/assets/menu.png" />
+                <img src={MenuImg} />
             </div>
             <div className="main">
                 <div className="contact">

@@ -6,6 +6,8 @@ import { Nav } from "../components";
 
 import "../styles/About.scss";
 
+const MenuImg = new URL("../../assets/menu.png", import.meta.url).href;
+
 const About: FC = (): JSX.Element => {
     const [menu, setMenu] = useState<boolean>(false);
 
@@ -20,7 +22,7 @@ const About: FC = (): JSX.Element => {
                 <Nav />
             </div>
             <div className="burgerMenu" onClick={setStyles} style={burgerMenu}>
-                <img src="/assets/menu.png" />
+                <img src={MenuImg} />
             </div>
             <div className="main">
                 <div className="about">
@@ -37,10 +39,11 @@ const About: FC = (): JSX.Element => {
                         </p>
                         <p>
                             I also have experience working with a variety of
-                            database engines such as SQL Server, MySQL, MongoDB and PostgreSQL. I have worked on both individual and team
-                            projects and have had the opportunity to develop
-                            applications for external clients or companies on a
-                            freelance basis.
+                            database engines such as SQL Server, MySQL, MongoDB
+                            and PostgreSQL. I have worked on both individual and
+                            team projects and have had the opportunity to
+                            develop applications for external clients or
+                            companies on a freelance basis.
                         </p>
                         <p>
                             I consider myself a highly skilled professional and

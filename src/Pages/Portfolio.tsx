@@ -6,6 +6,9 @@ import { Nav } from "../components";
 
 import "../styles/Portfolio.scss";
 
+const MenuImg = new URL("../../assets/menu.png", import.meta.url).href;
+const Project1 = new URL("../../assets/pages/sellzee.png", import.meta.url).href;
+
 const Portfolio: FC = (): JSX.Element => {
     const [menu, setMenu] = useState<boolean>(false);
 
@@ -20,13 +23,15 @@ const Portfolio: FC = (): JSX.Element => {
                 <Nav />
             </div>
             <div className="burgerMenu" onClick={setStyles} style={burgerMenu}>
-                <img src="/assets/menu.png" />
+                <img src={MenuImg} />
             </div>
             <div className="main">
                 <div className="portfolio">
                     <h1>Portfolio</h1>
                     <div className="portfolio_content">
-                        <h2>Pagina en construcción</h2>
+                        <a href="//https://sellzee-jaden.netlify.app/">
+                            <img src={Project1} alt="Sellzee" />
+                        </a>
                     </div>
                 </div>
             </div>
