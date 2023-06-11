@@ -29,7 +29,7 @@ const Portfolio: FC = (): JSX.Element => {
                 <div className="portfolio">
                     <h1>Portfolio</h1>
                     <div className="portfolio_content">
-                        <a href="//https://sellzee-jaden.netlify.app/">
+                        <a href="https://sellzee-jaden.netlify.app/">
                             <img src={Project1} alt="Sellzee" />
                         </a>
                     </div>
