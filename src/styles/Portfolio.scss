@@ -7,9 +7,13 @@
         font-size: clamp(100%, 65px, 70px);
         margin-bottom: 50px;
     }
-    &_content{
-        img{
-            width: 300px;
+    &_content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        img {
+            max-width: 300px;
+            width: 100%;
             height: 150px;
             object-fit: cover;
             border-radius: 10px;
