@@ -30,26 +30,26 @@ const About: FC = (): JSX.Element => {
                     <div className="about-desc">
                         <p>
                             Hi, my name is Yonderi Diaz. I am a Full-Stack
-                            Developer with 4 years of experience in the field.
+                            developer with 4 years of experience in the field.
                         </p>
                         <p>
                             During my career, I have acquired a wide range of
                             skills in backend and frontend technologies such as
-                            Node.js, JavaScript, etc...
+                            Node.js, JavaScript, Express, React, React Native,
+                            Next.js, Angular, Svelte, Docker, etc...
                         </p>
                         <p>
                             I also have experience working with a variety of
-                            database engines such as SQL Server, MySQL, MongoDB
-                            and PostgreSQL. I have worked on both individual and
-                            team projects and have had the opportunity to
-                            develop applications for external clients or
-                            companies on a freelance basis.
+                            database engines such as SQL Server, MySQL, and
+                            MongoDB. I have worked on both individual and team
+                            projects and have had the opportunity to develop
+                            applications for external clients or companies on a
+                            freelance basis.
                         </p>
                         <p>
-                            I consider myself a highly skilled professional and
-                            I'm always looking for new challenges and
-                            opportunities to continue learning and improving my
-                            skills.
+                            I'm a high skilled professional and I’m always
+                            looking for new challenges and opportunities to
+                            continue learning and improving my skills.
                         </p>
                     </div>
                 </div>
