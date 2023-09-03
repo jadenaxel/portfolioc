@@ -1,0 +1,22 @@
+---
+
+import "../styles/main.scss";
+
+interface LayoutInterface {
+    titlePage: string;
+}
+
+const { titlePage }: LayoutInterface = Astro.props as LayoutInterface;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{titlePage} - Portfolio</title>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>

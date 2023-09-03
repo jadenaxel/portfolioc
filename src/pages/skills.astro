@@ -1,0 +1,87 @@
+---
+import Layout from "../components/Layout.astro";
+import Nav from "../components/Nav.astro";
+import BurgerMenu from "../components/Menu";
+---
+
+<Layout titlePage="Skills">
+    <div class="page">
+        <div class="navigation">
+            <Nav />
+        </div>
+        <BurgerMenu />
+        <div class="main">
+            <div class="skills">
+                <h1>Skills</h1>
+
+                <div class="skills-frontend">
+                    <h2>Frontend</h2>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>PUG</li>
+                        <li>CSS3</li>
+                        <li>SASS</li>
+                        <li>JavaScript</li>
+                        <li>NextJS</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="skills-backend">
+                    <h2>Backend</h2>
+                    <ul>
+                        <li>NodeJS</li>
+                        <li>DenoJS</li>
+                        <li>TypeScript</li>
+                        <li>Express</li>
+                        <li>NestJS</li>
+                        <li>GRAPHQL</li>
+                        <li>API Rest</li>
+                        <li>Docker</li>
+                        <li>SQL Server</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skills-mobile">
+                    <h2>Mobile</h2>
+                    <ul>
+                        <li>React Native</li>
+                        <li>Expo</li>
+                    </ul>
+                </div>
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style lang="scss">
+    @import "../styles/main.scss";
+
+    .skills {
+        margin-left: 60px;
+        h1 {
+            font-size: clamp(100%, 65px, 70px);
+            margin-bottom: 50px;
+        }
+
+        &-frontend,
+        &-backend,
+        &-mobile {
+            margin-bottom: 20px;
+            h2 {
+                font-size: clamp(100%, 35px, 40px);
+                margin-bottom: 20px;
+            }
+            ul {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                gap: 30px;
+                li {
+                    font-size: clamp(100%, 18px, 20px);
+                }
+            }
+        }
+    }
+</style>
+ ../components/Menu

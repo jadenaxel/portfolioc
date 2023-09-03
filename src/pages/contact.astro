@@ -1,0 +1,62 @@
+---
+import Layout from "../components/Layout.astro";
+import Nav from "../components/Nav.astro";
+import BurgerMenu from "../components/Menu";
+---
+
+<Layout titlePage="Contact">
+    <div class="page">
+        <div class="navigation">
+            <Nav />
+        </div>
+        <BurgerMenu />
+        <div class="main">
+            <div class="contact">
+                <h1>Contact</h1>
+                <div class="contact_content">
+                    <p>
+                        <span>Tel:</span> 829-450-5297
+                    </p>
+                    <p>
+                        <span>Email:</span> jondydiaz@hotmail.com
+                    </p>
+                    <p>
+                        <span>GitHub:</span>
+                        <a href="//github.com/jadenaxel">
+                            github.com/jadenaxel
+                        </a>
+                    </p>
+                    <p>
+                        <span>LinkedIn:</span>
+                        <a href="//www.linkedin.com/in/jadenaxel/">
+                            jadenaxel
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style lang="scss">
+    @import "../styles/main.scss";
+
+    .contact {
+        margin-left: 40px;
+        h1 {
+            font-size: clamp(100%, 65px, 70px);
+            margin-bottom: 50px;
+        }
+        &_content {
+            p {
+                font-size: clamp(100%, 20px, 25px);
+                margin-bottom: 10px;
+                span {
+                    font-weight: bold;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+</style>
+ ../components/Menu

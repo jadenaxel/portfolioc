@@ -1,0 +1,56 @@
+---
+import Layout from "../components/Layout.astro";
+
+import Menu from "../components/Menu";
+---
+
+<Layout titlePage="Home">
+    <div class="page">
+        <Menu client:load />
+        <div class="main">
+            <div class="home">
+                <div class="home-presentation">
+                    <h1>
+                        Yonderi
+                        <span>Diaz</span>
+                        <span>Rivera</span>
+                    </h1>
+                    <img src="/profile.jpg" alt="Profile Picture" />
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style lang="scss">
+    .home {
+        &-presentation {
+            min-height: 90vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            place-items: center;
+            gap: 20px;
+            h1 {
+                justify-self: end;
+                font-size: clamp(100%, 50px, 60px);
+                span {
+                    display: block;
+                    line-height: 25px;
+                    &:first-child {
+                        position: relative;
+                        top: -5px;
+                        margin-left: 35px;
+                        color: #b4b4b4;
+                    }
+                }
+            }
+            img {
+                justify-self: start;
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+    }
+</style>

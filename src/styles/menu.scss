@@ -1,0 +1,32 @@
+@import "../styles/main.scss";
+
+nav {
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 15px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 25px;
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background-color: $color-primary;
+                    transition: 0.5s ease-in-out;
+                }
+                &:hover {
+                    &::after {
+                        display: block;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

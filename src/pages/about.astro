@@ -1,0 +1,70 @@
+---
+import Layout from "../components/Layout.astro";
+import Nav from "../components/Nav.astro";
+import BurgerMenu from "../components/Menu";
+---
+
+<Layout titlePage="About">
+    <div class="page">
+        <div class="navigation">
+            <Nav />
+        </div>
+        <BurgerMenu />
+        <div class="main">
+            <div class="about">
+                <h1 class="about-title">About me</h1>
+                <div class="about-desc">
+                    <p>
+                        Hi, my name is Yonderi Diaz. I am a Full-Stack developer
+                        with 4 years of experience in the field.
+                    </p>
+                    <p>
+                        During my career, I have acquired a wide range of skills
+                        in backend and frontend technologies such as Node.js,
+                        JavaScript, Express, React, React Native, Next.js,
+                        Angular, Svelte, Docker, etc...
+                    </p>
+                    <p>
+                        I also have experience working with a variety of
+                        database engines such as SQL Server, MySQL, and MongoDB.
+                        I have worked on both individual and team projects and
+                        have had the opportunity to develop applications for
+                        external clients or companies on a freelance basis.
+                    </p>
+                    <p>
+                        I'm a high skilled professional and I’m always looking
+                        for new challenges and opportunities to continue
+                        learning and improving my skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>
+
+<style lang="scss">
+    @import "../styles/main.scss";
+
+    .about {
+        padding-left: 20px;
+
+        @include break(660px) {
+            margin-left: 20px;
+        }
+
+        &-title {
+            font-size: clamp(100%, 65px, 70px);
+            margin-bottom: 50px;
+        }
+        &-desc {
+            p {
+                font-size: clamp(100%, 25px, 20px);
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+</style>
+ ../components/Menu
