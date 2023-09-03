@@ -1,19 +1,14 @@
 ---
 import Layout from "../components/Layout.astro";
-import Nav from "../components/Nav.astro";
-import BurgerMenu from "../components/Menu";
+import Menu from "../components/Menu";
 ---
 
 <Layout titlePage="Skills">
     <div class="page">
-        <div class="navigation">
-            <Nav />
-        </div>
-        <BurgerMenu />
+        <Menu client:load />
         <div class="main">
             <div class="skills">
                 <h1>Skills</h1>
-
                 <div class="skills-frontend">
                     <h2>Frontend</h2>
                     <ul>
