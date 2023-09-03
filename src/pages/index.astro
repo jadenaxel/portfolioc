@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 import Layout from "../components/Layout.astro";
 import Menu from "../components/Menu";
 ---
@@ -14,7 +16,7 @@ import Menu from "../components/Menu";
                         <span>Diaz</span>
                         <span>Rivera</span>
                     </h1>
-                    <img src="/profile.jpg" alt="Profile Picture" />
+                    <Image src="/profile.jpg" alt="Profile Picture" class="profile-picture" width="200" height="200" />
                 </div>
             </div>
         </div>
@@ -45,8 +47,6 @@ import Menu from "../components/Menu";
             }
             img {
                 justify-self: start;
-                width: 200px;
-                height: 200px;
                 object-fit: cover;
                 border-radius: 50%;
             }
