@@ -42,20 +42,20 @@ import Menu from "../components/Menu";
     @import "../styles/main.scss";
 
     .about {
-        padding-left: 20px;
-
-        @include break(660px) {
-            margin-left: 20px;
-        }
-
+        height: 100dvh;
+        place-content: center;
         &-title {
             font-size: clamp(100%, 65px, 70px);
             margin-bottom: 50px;
+            text-align: center;
         }
         &-desc {
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
             p {
                 font-size: clamp(100%, 25px, 20px);
-                margin-bottom: 20px;
+                margin-bottom: 30px;
                 &:last-child {
                     margin-bottom: 0;
                 }
