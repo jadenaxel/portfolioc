@@ -1,20 +1,44 @@
 ---
 import Layout from "../components/Layout.astro";
 import Menu from "../components/Menu";
+import NotAvailable from "../components/NotAvailable.astro";
 ---
 
 <Layout titlePage="Skills">
     <div class="page">
         <Menu client:load />
         <div class="main">
+            <NotAvailable />
             <div class="skills">
                 <h1>Skills</h1>
                 <div class="skills-frontend">
                     <h2>Frontend</h2>
+
+                    <div>
+                        <div class="html5">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/512/174/174854.png"
+                                alt="HTML5"
+                            />
+                            <h3>HTML5</h3>
+                        </div>
+                        <div class="pug">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/512/4843/4843845.png"
+                                alt="PUG"
+                            />
+                            <h3>PUG</h3>
+                        </div>
+                        <div class="css3">
+                            <img
+                                src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                                alt="CSS3"
+                            />
+                            <h3>CSS3</h3>
+                        </div>
+                    </div>
+
                     <ul>
-                        <li>HTML5</li>
-                        <li>PUG</li>
-                        <li>CSS3</li>
                         <li>SASS</li>
                         <li>JavaScript</li>
                         <li>NextJS</li>
@@ -55,25 +79,26 @@ import Menu from "../components/Menu";
 
     .skills {
         margin-left: 60px;
+        display: none;
         h1 {
             font-size: clamp(100%, 65px, 70px);
             margin-bottom: 50px;
+            text-align: center;
         }
 
-        &-frontend,
-        &-backend,
-        &-mobile {
-            margin-bottom: 20px;
-            h2 {
-                font-size: clamp(100%, 35px, 40px);
-                margin-bottom: 20px;
-            }
-            ul {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-                gap: 30px;
-                li {
-                    font-size: clamp(100%, 18px, 20px);
+        .skills-frontend {
+            & > div {
+                display: flex;
+                gap: 10px;
+                .html5,
+                .pug,
+                .css3 {
+                    display: flex;
+                    align-items: center;
+                    // gap: 5px;
+                    img {
+                        width: 50px;
+                    }
                 }
             }
         }

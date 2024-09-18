@@ -3,12 +3,14 @@ import { Image } from "astro:assets";
 
 import Layout from "../../components/Layout.astro";
 import Menu from "../../components/Menu";
+import NotAvailable from "../../components/NotAvailable.astro";
 ---
 
 <Layout titlePage="Portfolio">
     <div class="page">
         <Menu client:load />
         <div class="main">
+            <NotAvailable />
             <div class="portfolio">
                 <h1>Portfolio</h1>
                 <div class="portfolio_content">
@@ -42,6 +44,7 @@ import Menu from "../../components/Menu";
     .portfolio {
         min-height: 80vh;
         margin-left: 40px;
+        display: none;
         h1 {
             font-size: clamp(100%, 65px, 70px);
             margin-bottom: 50px;
